@@ -1,0 +1,8 @@
+1) SELECT REPLACE(FIRST_NAME,"a","A") FROM worker;
+2) SELECT * FROM worker w
+   ORDER BY w.FIRST_NAME ASC,
+            w.DEPARTMENT DESC;
+3) SELECT FIRST_NAME, SALARY
+   FROM Worker
+   WHERE SALARY = (SELECT max(SALARY) 
+                   FROM Worker)
